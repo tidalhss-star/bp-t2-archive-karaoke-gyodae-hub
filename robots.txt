@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://archive.karaoke-gyodae-hub.xyz/sitemap.xml
+Sitemap: https://archive.karaoke-gyodae-hub.xyz/sitemap-pages.xml
