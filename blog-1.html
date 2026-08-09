@@ -1,552 +1,550 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>가이드 — 접대 장소 추천 및 업종별 분석</title>
-    <meta name="description" content="서울 지역 비즈니스 접대 및 회식 모임을 위한 다양한 업종(가라오케, 룸싸롱, 텐카페, 쩜오, 펍 등)의 객관적 특징과 예산별, 목적별 선택 기준을 체계적으로 비교 분석하여 제공하는 전문 가이드 블로그입니다.">
-    <meta name="keywords" content="접대 장소 추천, 서울 비즈니스 접대, 가라오케 추천, 텐카페 비교, 회식 장소 가이드, 비즈니스 모임">
-    <link rel="canonical" href="https://archive.karaoke-gyodae-hub.xyz/blog-1.html">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="가이드 — 접대 장소 추천 및 업종별 분석">
-    <meta property="og:description" content="서울 지역 비즈니스 접대 및 회식 모임을 위한 다양한 업종(가라오케, 룸싸롱, 텐카페, 쩜오, 펍 등)의 객관적 특징과 예산별, 목적별 선택 기준을 체계적으로 비교 분석하여 제공하는 전문 가이드 블로그입니다.">
-    <meta property="og:url" content="https://archive.karaoke-gyodae-hub.xyz/blog-1.html">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가이드 — 접대 장소 추천 및 업종별 분석</title>
+ <meta name="description" content="서울 지역 비즈니스 접대 및 회식 모임을 위한 다양한 업종(가라오케, 룸싸롱, 텐카페, 쩜오, 펍 등)의 객관적 특징과 예산별, 목적별 선택 기준을 체계적으로 비교 분석하여 제공하는 전문 가이드 블로그입니다.">
+ <meta name="keywords" content="접대 장소 추천, 서울 비즈니스 접대, 가라오케 추천, 텐카페 비교, 회식 장소 가이드, 비즈니스 모임">
+ <link rel="canonical" href="https://archive.karaoke-gyodae-hub.xyz/blog-1.html">
+ 
+ <!-- Open Graph -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="가이드 — 접대 장소 추천 및 업종별 분석">
+ <meta property="og:description" content="서울 지역 비즈니스 접대 및 회식 모임을 위한 다양한 업종(가라오케, 룸싸롱, 텐카페, 쩜오, 펍 등)의 객관적 특징과 예산별, 목적별 선택 기준을 체계적으로 비교 분석하여 제공하는 전문 가이드 블로그입니다.">
+ <meta property="og:url" content="https://archive.karaoke-gyodae-hub.xyz/blog-1.html">
 
-    <style>
-        /* CSS DNA: Street Brutalist & Terminal Mono */
-        :root {
-            --bg-color: #050505;
-            --primary-color: #dfff00; /* Acid Yellow */
-            --text-color: #ffffff;
-            --text-muted: #a0a0a0;
-            --border-color: #dfff00;
-            --card-bg: #121212;
-            --font-mono: 'Courier New', Courier, monospace;
-            --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-        }
+ <style>
+ /* CSS DNA: Street Brutalist & Terminal Mono */
+ :root {
+ --bg-color: #050505;
+ --primary-color: #dfff00; /* Acid Yellow */
+ --text-color: #ffffff;
+ --text-muted: #a0a0a0;
+ --border-color: #dfff00;
+ --card-bg: #121212;
+ --font-mono: 'Courier New', Courier, monospace;
+ --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+ }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--font-sans);
-            line-height: 1.6;
-            padding: 0;
-            overflow-x: hidden;
-        }
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: var(--font-sans);
+ line-height: 1.6;
+ padding: 0;
+ overflow-x: hidden;
+ }
 
-        /* Brutalist Layout Rules */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+ /* Brutalist Layout Rules */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+ }
 
-        /* Header Style */
-        header {
-            border-bottom: 5px solid var(--border-color);
-            background-color: var(--bg-color);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+ /* Header Style */
+ header {
+ border-bottom: 5px solid var(--border-color);
+ background-color: var(--bg-color);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
 
-        .header-wrap {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+ .header-wrap {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
 
-        .logo {
-            font-family: var(--font-mono);
-            font-weight: 900;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: var(--primary-color);
-            border: 3px solid var(--primary-color);
-            padding: 5px 10px;
-            background: #000;
-            box-shadow: 4px 4px 0px #fff;
-        }
+ .logo {
+ font-family: var(--font-mono);
+ font-weight: 900;
+ font-size: 1.5rem;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--primary-color);
+ border: 3px solid var(--primary-color);
+ padding: 5px 10px;
+ background: #000;
+ box-shadow: 4px 4px 0px #fff;
+ }
 
-        /* Navigation */
-        .t-nav-9qu0 {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
+ /* Navigation */
+ .t-nav-9qu0 {
+ display: flex;
+ list-style: none;
+ gap: 20px;
+ }
 
-        .t-nav-9qu0-item a {
-            font-family: var(--font-mono);
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            padding: 5px 10px;
-            transition: all 0.2s ease;
-        }
+ .t-nav-9qu0-item a {
+ font-family: var(--font-mono);
+ color: var(--text-color);
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ padding: 5px 10px;
+ transition: all 0.2s ease;
+ }
 
-        .t-nav-9qu0-item a:hover, 
-        .t-nav-9qu0-item a.active {
-            background-color: var(--primary-color);
-            color: #000;
-        }
+ .t-nav-9qu0-item a:hover, 
+ .t-nav-9qu0-item a.active {
+ background-color: var(--primary-color);
+ color: #000;
+ }
 
-        /* Hero / Title Section */
-        .hero-section {
-            border: 4px solid var(--border-color);
-            background-color: var(--card-bg);
-            margin: 40px 0;
-            padding: 40px;
-            position: relative;
-            box-shadow: 10px 10px 0px #ffffff;
-        }
+ /* Hero / Title Section */
+ .hero-section {
+ border: 4px solid var(--border-color);
+ background-color: var(--card-bg);
+ margin: 40px 0;
+ padding: 40px;
+ position: relative;
+ box-shadow: 10px 10px 0px #ffffff;
+ }
 
-        .hero-section::before {
-            content: "[ANALYSIS_REPORT_092]";
-            font-family: var(--font-mono);
-            color: var(--primary-color);
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 0.8rem;
-        }
+ .hero-section::before {
+ content: "[ANALYSIS_REPORT_092]";
+ font-family: var(--font-mono);
+ color: var(--primary-color);
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ font-size: 0.8rem;
+ }
 
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 900;
-            line-height: 1.1;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            word-break: keep-all;
-        }
+ .hero-title {
+ font-size: 3rem;
+ font-weight: 900;
+ line-height: 1.1;
+ text-transform: uppercase;
+ margin-bottom: 20px;
+ word-break: keep-all;
+ }
 
-        .hero-title span {
-            background-color: var(--primary-color);
-            color: #000;
-            padding: 0 5px;
-        }
+ .hero-title span {
+ background-color: var(--primary-color);
+ color: #000;
+ padding: 0 5px;
+ }
 
-        .hero-desc {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            max-width: 800px;
-            margin-bottom: 0;
-        }
+ .hero-desc {
+ font-size: 1.1rem;
+ color: var(--text-muted);
+ max-width: 800px;
+ margin-bottom: 0;
+ }
 
-        /* Layout Grid */
-        .grid-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            margin-bottom: 60px;
-        }
+ /* Layout Grid */
+ .grid-layout {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 30px;
+ margin-bottom: 60px;
+ }
 
-        @media (max-width: 992px) {
-            .grid-layout {
-                grid-template-columns: 1fr;
-            }
-        }
+ @media (max-width: 992px) {
+ .grid-layout {
+ grid-template-columns: 1fr;
+ }
+ }
 
-        /* Main Content Cards */
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+ /* Main Content Cards */
+ .main-content {
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ }
 
-        .m-card-b2rf {
-            background-color: var(--card-bg);
-            border: 3px solid #fff;
-            padding: 30px;
-            position: relative;
-            transition: transform 0.2s ease;
-        }
+ .m-card-b2rf {
+ background-color: var(--card-bg);
+ border: 3px solid #fff;
+ padding: 30px;
+ position: relative;
+ transition: transform 0.2s ease;
+ }
 
-        .m-card-b2rf:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 6px 6px 0px var(--primary-color);
-        }
+ .m-card-b2rf:hover {
+ transform: translate(-4px, -4px);
+ box-shadow: 6px 6px 0px var(--primary-color);
+ }
 
-        .m-card-b2rf.featured {
-            border-color: var(--primary-color);
-        }
+ .m-card-b2rf.featured {
+ border-color: var(--primary-color);
+ }
 
-        .card-tag {
-            display: inline-block;
-            font-family: var(--font-mono);
-            background-color: var(--primary-color);
-            color: #000;
-            font-size: 0.75rem;
-            font-weight: bold;
-            padding: 3px 8px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
+ .card-tag {
+ display: inline-block;
+ font-family: var(--font-mono);
+ background-color: var(--primary-color);
+ color: #000;
+ font-size: 0.75rem;
+ font-weight: bold;
+ padding: 3px 8px;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ }
 
-        .card-title {
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            color: #fff;
-        }
+ .card-title {
+ font-size: 1.8rem;
+ font-weight: 800;
+ margin-bottom: 15px;
+ color: #fff;
+ }
 
-        .card-text {
-            color: #e0e0e0;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
+ .card-text {
+ color: #e0e0e0;
+ font-size: 1rem;
+ margin-bottom: 20px;
+ text-align: justify;
+ }
 
-        /* Comparison Table Container */
-        .table-container {
-            overflow-x: auto;
-            margin: 20px 0;
-            border: 2px solid var(--primary-color);
-        }
+ /* Comparison Table Container */
+ .table-container {
+ overflow-x: auto;
+ margin: 20px 0;
+ border: 2px solid var(--primary-color);
+ }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            text-align: left;
-        }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ text-align: left;
+ }
 
-        th {
-            background-color: var(--primary-color);
-            color: #000;
-            padding: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+ th {
+ background-color: var(--primary-color);
+ color: #000;
+ padding: 12px;
+ font-weight: bold;
+ text-transform: uppercase;
+ }
 
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #333;
-            background-color: #121212;
-            color: #fff;
-        }
+ td {
+ padding: 12px;
+ border-bottom: 1px solid #333;
+ background-color: #121212;
+ color: #fff;
+ }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+ tr:last-child td {
+ border-bottom: none;
+ }
 
-        /* Sidebar Elements */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+ /* Sidebar Elements */
+ .sidebar {
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ }
 
-        .sidebar-widget {
-            border: 3px solid var(--primary-color);
-            background-color: #000;
-            padding: 25px;
-        }
+ .sidebar-widget {
+ border: 3px solid var(--primary-color);
+ background-color: #000;
+ padding: 25px;
+ }
 
-        .widget-title {
-            font-family: var(--font-mono);
-            font-size: 1.2rem;
-            font-weight: 900;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
+ .widget-title {
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ font-weight: 900;
+ color: var(--primary-color);
+ border-bottom: 2px solid var(--primary-color);
+ padding-bottom: 10px;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ }
 
-        .r-list-gb5m {
-            list-style: none;
-        }
+ .r-list-gb5m {
+ list-style: none;
+ }
 
-        .r-list-gb5m li {
-            padding: 10px 0;
-            border-bottom: 1px dashed #333;
-            font-size: 0.95rem;
-        }
+ .r-list-gb5m li {
+ padding: 10px 0;
+ border-bottom: 1px dashed #333;
+ font-size: 0.95rem;
+ }
 
-        .r-list-gb5m li:last-child {
-            border-bottom: none;
-        }
+ .r-list-gb5m li:last-child {
+ border-bottom: none;
+ }
 
-        .r-list-gb5m a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
+ .r-list-gb5m a {
+ color: #fff;
+ text-decoration: none;
+ transition: color 0.2s ease;
+ }
 
-        .r-list-gb5m a:hover {
-            color: var(--primary-color);
-        }
+ .r-list-gb5m a:hover {
+ color: var(--primary-color);
+ }
 
-        /* FAQ Section */
-        .faq-section {
-            margin-top: 60px;
-            border-top: 5px solid var(--primary-color);
-            padding-top: 40px;
-        }
+ /* FAQ Section */
+ .faq-section {
+ margin-top: 60px;
+ border-top: 5px solid var(--primary-color);
+ padding-top: 40px;
+ }
 
-        .faq-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 30px;
-        }
+ .faq-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+ margin-top: 30px;
+ }
 
-        @media (max-width: 768px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+ @media (max-width: 768px) {
+ .faq-grid {
+ grid-template-columns: 1fr;
+ }
+ }
 
-        .faq-item {
-            background-color: #111;
-            border: 2px solid #333;
-            padding: 20px;
-        }
+ .faq-item {
+ background-color: #111;
+ border: 2px solid #333;
+ padding: 20px;
+ }
 
-        .faq-question {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
+ .faq-question {
+ font-size: 1.1rem;
+ font-weight: bold;
+ color: var(--primary-color);
+ margin-bottom: 10px;
+ display: flex;
+ align-items: flex-start;
+ gap: 10px;
+ }
 
-        .faq-answer {
-            color: #ccc;
-            font-size: 0.95rem;
-        }
+ .faq-answer {
+ color: #ccc;
+ font-size: 0.95rem;
+ }
 
-        /* Footer */
-        footer {
-            border-top: 5px solid var(--border-color);
-            background-color: #000;
-            padding: 40px 20px;
-            margin-top: 80px;
-        }
+ /* Footer */
+ footer {
+ border-top: 5px solid var(--border-color);
+ background-color: #000;
+ padding: 40px 20px;
+ margin-top: 80px;
+ }
 
-        .footer-wrap {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+ .footer-wrap {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 20px;
+ }
 
-        .footer-text {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
+ .footer-text {
+ font-family: var(--font-mono);
+ font-size: 0.85rem;
+ color: var(--text-muted);
+ }
 
-        /* Responsive menu indicator */
-        .k-ico-y2h6 {
-            display: none;
-        }
+ /* Responsive menu indicator */
+ .k-ico-y2h6 {
+ display: none;
+ }
 
-        @media (max-width: 768px) {
-            .t-nav-9qu0 {
-                gap: 10px;
-            }
-            .t-nav-9qu0-item a {
-                font-size: 0.8rem;
-                padding: 4px 8px;
-            }
-            .hero-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
+ @media (max-width: 768px) {
+ .t-nav-9qu0 {
+ gap: 10px;
+ }
+ .t-nav-9qu0-item a {
+ font-size: 0.8rem;
+ padding: 4px 8px;
+ }
+ .hero-title {
+ font-size: 2rem;
+ }
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
-    <!-- Navigation Header -->
-    <header>
-        <div class="header-wrap">
-            <a href="/" class="logo">ENTERTAINMENT GUIDE</a>
-            <nav>
-                <ul class="t-nav-9qu0">
-                    <li class="t-nav-9qu0-item"><a href="/">홈</a></li>
-                    <li class="t-nav-9qu0-item"><a href="/guide" class="active">가이드</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <!-- Navigation Header -->
+ <header>
+ <div class="header-wrap">
+ <a href="/" class="logo">ENTERTAINMENT GUIDE</a>
+ <nav>
+ <ul class="t-nav-9qu0">
+ <li class="t-nav-9qu0-item"><a href="/">홈</a></li>
+ <li class="t-nav-9qu0-item"><a href="/guide" class="active">가이드</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h1 class="hero-title">비즈니스 모임을 위한 <span>접대 장소 추천</span> 및 업종별 비교 가이드</h1>
-            <p class="hero-desc">
-                서울 지역에서의 성공적인 비즈니스 접대와 회식을 위해 각 업종별(가라오케, 쩜오, 텐카페, 모던펍 등) 객관적인 구조적 특징과 예산 범위, 모임 성격에 따른 정밀한 선택 가이드를 제시합니다. 본 분석은 객관적인 업계 표준 데이터를 바탕으로 작성되었습니다.
-            </p>
-        </section>
+ <div class="container">
+ <!-- Hero Section -->
+ <section class="hero-section">
+ <h1 class="hero-title">비즈니스 모임을 위한 <span>접대 장소 추천</span> 및 업종별 비교 가이드</h1>
+ <p class="hero-desc">
+ 서울 지역에서의 성공적인 비즈니스 접대와 회식을 위해 각 업종별(가라오케, 쩜오, 텐카페, 모던펍 등) 객관적인 구조적 특징과 예산 범위, 모임 성격에 따른 정밀한 선택 가이드를 제시합니다. 본 분석은 객관적인 업계 표준 데이터를 바탕으로 작성되었습니다.
+ </p>
+ </section>
 
-        <!-- Main Content Area -->
-        <div class="grid-layout">
-            
-            <!-- Left: Deep Dive Content -->
-            <main class="main-content">
-                
-                <!-- Section 1: Introduction -->
-                <article class="m-card-b2rf featured">
-                    <span class="card-tag">01 / OVERVIEW</span>
-                    <h2 class="card-title">왜 비즈니스 성격에 맞는 장소 선택이 중요한가?</h2>
-                    <p class="card-text">
-                        기업 간 비즈니스 미팅과 접대는 단순히 친목을 도모하는 자리를 넘어, 상호 신뢰를 확인하고 중요한 의사결정을 조율하는 연장선에 있습니다. 모임의 성격, 참석자의 연령대 및 직급, 그리고 대화의 보안 수준에 따라 적합한 공간의 형태는 완전히 달라집니다. 잘못된 업종 선택은 미팅의 목적을 흐리거나 참석자에게 불편함을 초래할 수 있으므로, 각 업종의 시스템적 특징을 명확히 이해하는 것이 선행되어야 합니다.
-                    </p>
-                </article>
+ <!-- Main Content Area -->
+ <div class="grid-layout">
+ 
+ <!-- Left: Deep Dive Content -->
+ <main class="main-content">
+ 
+ <!-- Section 1: Introduction -->
+ <article class="m-card-b2rf featured">
+ <span class="card-tag">01 / OVERVIEW</span>
+ <h2 class="card-title">왜 비즈니스 성격에 맞는 장소 선택이 중요한가?</h2>
+ <p class="card-text">
+ 기업 간 비즈니스 미팅과 접대는 단순히 친목을 도모하는 자리를 넘어, 상호 신뢰를 확인하고 중요한 의사결정을 조율하는 연장선에 있습니다. 모임의 성격, 참석자의 연령대 및 직급, 그리고 대화의 보안 수준에 따라 적합한 공간의 형태는 완전히 달라집니다. 잘못된 업종 선택은 미팅의 목적을 흐리거나 참석자에게 불편함을 초래할 수 있으므로, 각 업종의 시스템적 특징을 명확히 이해하는 것이 선행되어야 합니다.
+ </p>
+ </article>
 
-                <!-- Section 2: Industry Comparison -->
-                <article class="m-card-b2rf">
-                    <span class="card-tag">02 / COMPARISON</span>
-                    <h2 class="card-title">서울 주요 비즈니스 접대 업종별 시스템 분석</h2>
-                    <p class="card-text">
-                        서울 내에서 운영되는 비즈니스 접대 공간은 크게 가라오케, 멤버십 룸(쩜오, 텐카페), 퍼블릭 펍 및 바 등으로 분류됩니다. 각 공간이 제공하는 프라이버시 수준과 운영 방식의 차이는 아래와 같습니다.
-                    </p>
+ <!-- Section 2: Industry Comparison -->
+ <article class="m-card-b2rf">
+ <span class="card-tag">02 / COMPARISON</span>
+ <h2 class="card-title">서울 주요 비즈니스 접대 업종별 시스템 분석</h2>
+ <p class="card-text">
+ 서울 내에서 운영되는 비즈니스 접대 공간은 크게 가라오케, 멤버십 룸(쩜오, 텐카페), 퍼블릭 펍 및 바 등으로 분류됩니다. 각 공간이 제공하는 프라이버시 수준과 운영 방식의 차이는 아래와 같습니다.
+ </p>
 
-                    <div class="table-container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>업종 분류</th>
-                                    <th>프라이버시 수준</th>
-                                    <th>운영 방식 특징</th>
-                                    <th>적합한 모임 성격</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>가라오케 (Karaoke)</td>
-                                    <td>중~상 (독립 룸 구성)</td>
-                                    <td>시간제 테이블 운영, 개별 음향 설비 완비</td>
-                                    <td>단체 회식, 캐주얼 접대, 친목 도모형 미팅</td>
-                                </tr>
-                                <tr>
-                                    <td>쩜오 / 텐카페 (Membership)</td>
-                                    <td>최상 (철저한 보안)</td>
-                                    <td>1:다 로테이션 시스템, 고급 밀착 에스코트</td>
-                                    <td>중요 계약 조율, VIP 의전, 고도의 프라이빗 미팅</td>
-                                </tr>
-                                <tr>
-                                    <td>모던 펍 & 바 (Pub & Bar)</td>
-                                    <td>하~중 (오픈형/부스형)</td>
-                                    <td>개방적인 홀 중심, 트렌디한 음료 구성</td>
-                                    <td>IT/스타트업 네트워킹, 가벼운 사전 미팅</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>업종 분류</th>
+ <th>프라이버시 수준</th>
+ <th>운영 방식 특징</th>
+ <th>적합한 모임 성격</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>가라오케 (Karaoke)</td>
+ <td>중~상 (독립 룸 구성)</td>
+ <td>시간제 테이블 운영, 개별 음향 설비 완비</td>
+ <td>단체 회식, 캐주얼 접대, 친목 도모형 미팅</td>
+ </tr>
+ <tr>
+ <td>쩜오 / 텐카페 (Membership)</td>
+ <td>최상 (철저한 보안)</td>
+ <td>1:다 로테이션 시스템, 고급 밀착 에스코트</td>
+ <td>중요 계약 조율, VIP 의전, 고도의 프라이빗 미팅</td>
+ </tr>
+ <tr>
+ <td>모던 펍 & 바 (Pub & Bar)</td>
+ <td>하~중 (오픈형/부스형)</td>
+ <td>개방적인 홀 중심, 트렌디한 음료 구성</td>
+ <td>IT/스타트업 네트워킹, 가벼운 사전 미팅</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
 
-                    <p class="card-text">
-                        위 표에서 알 수 있듯이, 논의하고자 하는 비즈니스의 보안 등급과 참석자 간의 심리적 거리에 따라 공간의 폐쇄성과 서비스 수준을 정교하게 매칭해야 합니다.
-                    </p>
-                </article>
+ <p class="card-text">
+ 위 표에서 알 수 있듯이, 논의하고자 하는 비즈니스의 보안 등급과 참석자 간의 심리적 거리에 따라 공간의 폐쇄성과 서비스 수준을 정교하게 매칭해야 합니다.
+ </p>
+ </article>
 
-                <!-- Section 3: Step-by-Step Guide -->
-                <article class="m-card-b2rf">
-                    <span class="card-tag">03 / DECISION PROCESS</span>
-                    <h2 class="card-title">실패 없는 접대 장소 선택을 위한 3단계 프로세스</h2>
-                    
-                    <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">1단계: 참석자의 성향 및 연령대 파악</h3>
-                    <p class="card-text">
-                        참석자의 연령이 높거나 보수적인 비즈니스 문화를 선호하는 경우, 개방된 공간보다는 방음이 철저하고 동선이 겹치지 않는 멤버십 형태의 고급 룸이 적합합니다. 반면, 젊은 층의 임원이나 외국인 파트너의 경우 세련된 인테리어의 가라오케나 모던 바가 더 자연스러운 분위기를 형성할 수 있습니다.
-                    </p>
+ <!-- Section 3: Step-by-Step Guide -->
+ <article class="m-card-b2rf">
+ <span class="card-tag">03 / DECISION PROCESS</span>
+ <h2 class="card-title">실패 없는 접대 장소 선택을 위한 3단계 프로세스</h2>
+ 
+ <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">1단계: 참석자의 성향 및 연령대 파악</h3>
+ <p class="card-text">
+ 참석자의 연령이 높거나 보수적인 비즈니스 문화를 선호하는 경우, 개방된 공간보다는 방음이 철저하고 동선이 겹치지 않는 멤버십 형태의 고급 룸이 적합합니다. 반면, 젊은 층의 임원이나 외국인 파트너의 경우 세련된 인테리어의 가라오케나 모던 바가 더 자연스러운 분위기를 형성할 수 있습니다.
+ </p>
 
-                    <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">2단계: 예산 규모 및 정산 방식의 투명성 확인</h3>
-                    <p class="card-text">
-                        접대 예산은 사전 수립된 기업 가이드라인 내에서 집행되어야 합니다. 가라오케의 경우 정찰제 구조가 비교적 잘 정착되어 있어 예산 예측이 용이한 반면, 멤버십 형태의 업종은 시간당 연장 비용이나 세부 세금(VAT 등) 항목에 따라 변동 폭이 크므로 사전 조율 및 확인이 필수적입니다.
-                    </p>
+ <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">2단계: 예산 규모 및 정산 방식의 투명성 확인</h3>
+ <p class="card-text">
+ 접대 예산은 사전 수립된 기업 가이드라인 내에서 집행되어야 합니다. 가라오케의 경우 정찰제 구조가 비교적 잘 정착되어 있어 예산 예측이 용이한 반면, 멤버십 형태의 업종은 시간당 연장 비용이나 세부 세금(VAT 등) 항목에 따라 변동 폭이 크므로 사전 조율 및 확인이 필수적입니다.
+ </p>
 
-                    <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">3단계: 위치 및 교통 인프라 고려</h3>
-                    <p class="card-text">
-                        서울 내 주요 비즈니스 권역(강남, 여의도, 광화문 등)과의 접근성을 최우선으로 고려해야 합니다. 특히 늦은 시간 귀가를 위한 대리운전 배차가 용이한 지역인지, 혹은 주차 및 발레파킹 서비스가 원활하게 지원되는지 여부가 전체 접대 경험의 만족도를 좌우합니다.
-                    </p>
-                </article>
+ <h3 style="color: var(--primary-color); margin: 15px 0 5px 0; font-size: 1.2rem;">3단계: 위치 및 교통 인프라 고려</h3>
+ <p class="card-text">
+ 서울 내 주요 비즈니스 권역(강남, 여의도, 광화문 등)과의 접근성을 최우선으로 고려해야 합니다. 특히 늦은 시간 귀가를 위한 대리운전 배차가 용이한 지역인지, 혹은 주차 및 발레파킹 서비스가 원활하게 지원되는지 여부가 전체 접대 경험의 만족도를 좌우합니다.
+ </p>
+ </article>
 
-            </main>
+ </main>
 
-            <!-- Right: Sidebar Information -->
-            <aside class="sidebar">
-                
-                <div class="sidebar-widget">
-                    <h3 class="widget-title">핵심 선택 기준 요약</h3>
-                    <ul class="r-list-gb5m">
-                        <li><strong>보안성 우선:</strong> 외부인과의 접촉을 최소화하는 독채형 및 멤버십 룸 선택</li>
-                        <li><strong>가성비/단체 모임:</strong> 고출력 음향 장비와 넓은 룸을 제공하는 대형 가라오케 추천</li>
-                        <li><strong>트렌디한 분위기:</strong> 강남/청담 권역의 하이엔드 라운지 및 모던 바</li>
-                    </ul>
-                </div>
+ <!-- Right: Sidebar Information -->
+ <aside class="sidebar">
+ 
+ <div class="sidebar-widget">
+ <h3 class="widget-title">핵심 선택 기준 요약</h3>
+ <ul class="r-list-gb5m">
+ <li><strong>보안성 우선:</strong> 외부인과의 접촉을 최소화하는 독채형 및 멤버십 룸 선택</li>
+ <li><strong>가성비/단체 모임:</strong> 고출력 음향 장비와 넓은 룸을 제공하는 대형 가라오케 추천</li>
+ <li><strong>트렌디한 분위기:</strong> 강남/청담 권역의 하이엔드 라운지 및 모던 바</li>
+ </ul>
+ </div>
 
-                <div class="sidebar-widget">
-                    <h3 class="widget-title">권역별 비즈니스 특징</h3>
-                    <ul class="r-list-gb5m">
-                        <li><strong>강남 권역 (GBD):</strong> 하이엔드 접대 인프라 밀집, 고가 멤버십 시스템 중심</li>
-                        <li><strong>마포/여의도 권역 (YBD):</strong> 금융 및 정재계 모임 중심, 격식 있고 차분한 전통 한정식 및 프라이빗 룸</li>
-                        <li><strong>종로/중구 권역 (CBD):</strong> 역사 깊은 비즈니스 모임 장소, 외국인 바이어 접대에 유리한 인프라</li>
-                    </ul>
-                </div>
+ <div class="sidebar-widget">
+ <h3 class="widget-title">권역별 비즈니스 특징</h3>
+ <ul class="r-list-gb5m">
+ <li><strong>강남 권역 (GBD):</strong> 하이엔드 접대 인프라 밀집, 고가 멤버십 시스템 중심</li>
+ <li><strong>마포/여의도 권역 (YBD):</strong> 금융 및 정재계 모임 중심, 격식 있고 차분한 전통 한정식 및 프라이빗 룸</li>
+ <li><strong>종로/중구 권역 (CBD):</strong> 역사 깊은 비즈니스 모임 장소, 외국인 바이어 접대에 유리한 인프라</li>
+ </ul>
+ </div>
 
-            </aside>
+ </aside>
 
-        </div>
+ </div>
 
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <h2 class="hero-title" style="font-size: 2.2rem; margin-bottom: 10px;">자주 묻는 질문 (FAQ)</h2>
-            <p style="color: var(--text-muted); margin-bottom: 30px;">접대 장소 선정 시 실무자들이 가장 자주 묻는 질문들을 정리했습니다.</p>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4 class="faq-question">Q. 비즈니스 접대 예약 시 가장 적절한 타이밍은 언제인가요?</h4>
-                    <p class="faq-answer">중요한 비즈니스 미팅의 경우, 최소 3일에서 1주일 전에 예약하는 것이 안전합니다. 특히 주말 직전이나 연말연시 등 성수기에는 선호하는 독립 룸의 배정이 조기에 마감되므로 사전 예약이 필수적입니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">Q. 업종별로 영수증 처리 및 증빙서류 발급이 원활한가요?</h4>
-                    <p class="faq-answer">정식 등록된 일반음식점이나 유흥주점의 경우 신용카드 결제 및 법인카드 증빙 처리가 기본적으로 가능합니다. 단, 기업 세무 감사 기준에 맞춰 적절한 적격증빙이 발급되는지 예약 시점에 미리 확인하는 것이 좋습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">Q. 외국인 바이어 접대 시 추천하는 공간 유형은 무엇인가요?</h4>
-                    <p class="faq-answer">한국 특유의 모임 문화를 체험할 수 있으면서도 세련된 의전이 가능한 대형 가라오케나, 한옥 콘셉트가 융합된 프라이빗 라운지를 추천합니다. 소음 통제가 완벽히 되는 공간이어야 동시통역이나 심도 깊은 대화가 원활합니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">Q. 주차 및 대리운전 서비스 지원 여부가 왜 중요한가요?</h4>
-                    <p class="faq-answer">접대의 마무리는 안전한 귀가입니다. 자체 발레파킹 시스템이 구축되어 있고, 전용 대리운전 호출 인프라가 연계되어 있는 매장을 선택하는 것이 귀가 시 발생할 수 있는 대기 시간을 최소화하고 품격을 유지하는 방법입니다.</p>
-                </div>
-            </div>
-        </section>
-    </div>
+ <!-- FAQ Section -->
+ <section class="faq-section">
+ <h2 class="hero-title" style="font-size: 2.2rem; margin-bottom: 10px;">자주 묻는 질문 (FAQ)</h2>
+ <p style="color: var(--text-muted); margin-bottom: 30px;">접대 장소 선정 시 실무자들이 가장 자주 묻는 질문들을 정리했습니다.</p>
+ 
+ <div class="faq-grid">
+ <div class="faq-item">
+ <h4 class="faq-question">Q. 비즈니스 접대 예약 시 가장 적절한 타이밍은 언제인가요?</h4>
+ <p class="faq-answer">중요한 비즈니스 미팅의 경우, 최소 3일에서 1주일 전에 예약하는 것이 안전합니다. 특히 주말 직전이나 연말연시 등 성수기에는 선호하는 독립 룸의 배정이 조기에 마감되므로 사전 예약이 필수적입니다.</p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Q. 업종별로 영수증 처리 및 증빙서류 발급이 원활한가요?</h4>
+ <p class="faq-answer">정식 등록된 일반음식점이나 유흥주점의 경우 신용카드 결제 및 법인카드 증빙 처리가 기본적으로 가능합니다. 단, 기업 세무 감사 기준에 맞춰 적절한 적격증빙이 발급되는지 예약 시점에 미리 확인하는 것이 좋습니다.</p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Q. 외국인 바이어 접대 시 추천하는 공간 유형은 무엇인가요?</h4>
+ <p class="faq-answer">한국 특유의 모임 문화를 체험할 수 있으면서도 세련된 의전이 가능한 대형 가라오케나, 한옥 콘셉트가 융합된 프라이빗 라운지를 추천합니다. 소음 통제가 완벽히 되는 공간이어야 동시통역이나 심도 깊은 대화가 원활합니다.</p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Q. 주차 및 대리운전 서비스 지원 여부가 왜 중요한가요?</h4>
+ <p class="faq-answer">접대의 마무리는 안전한 귀가입니다. 자체 발레파킹 시스템이 구축되어 있고, 전용 대리운전 호출 인프라가 연계되어 있는 매장을 선택하는 것이 귀가 시 발생할 수 있는 대기 시간을 최소화하고 품격을 유지하는 방법입니다.</p>
+ </div>
+ </div>
+ </section>
+ </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-wrap">
-            <div class="logo" style="font-size: 1.1rem; box-shadow: none;">ENTERTAINMENT GUIDE</div>
-            <p class="footer-text">
-                © 2024 Seoul Business Entertainment Guide. All rights reserved. 본 사이트는 비즈니스 접대 문화의 객관적 분석 정보를 제공하는 정보성 블로그입니다.
-            </p>
-        </div>
-    </footer>
+ <!-- Footer -->
+ <footer>
+ <div class="footer-wrap">
+ <div class="logo" style="font-size: 1.1rem; box-shadow: none;">ENTERTAINMENT GUIDE</div>
+ <p class="footer-text">
+ © 2024 Seoul Business Entertainment Guide. All rights reserved. 본 사이트는 비즈니스 접대 문화의 객관적 분석 정보를 제공하는 정보성 블로그입니다.
+ </p>
+ </div>
+ </footer>
 
 </body>
 </html>
