@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-archive-karaoke-gyodae-hub</title>
+  <meta name="description" content="t2-archive-karaoke-gyodae-hub에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://archive.karaoke-gyodae-hub.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS DNA: Street Brutalist & Terminal Mono */
+ :root {
+ --bg-color: #000000;
+ --card-bg: #121212;
+ --accent-color: #dfff00; /* Acid Yellow */
+ --text-color: #ffffff;
+ --text-muted: #a0a0a0;
+ --border-color: #dfff00;
+ --border-width: 4px;
+ --grid-gap: 20px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: 'Courier New', Courier, Monaco, monospace, "Malgun Gothic", sans-serif;
+ line-height: 1.6;
+ padding: 0;
+ overflow-x: hidden;
+ }
+
+ /* Brutalist Layout Rules */
+ .m-card-b2rf {
+ background: var(--card-bg);
+ border: var(--border-width) solid var(--border-color);
+ box-shadow: 8px 8px 0px #000000;
+ padding: 30px;
+ margin-bottom: var(--grid-gap);
+ position: relative;
+ }
+
+ .m-card-b2rf::before {
+ content: "[SYSTEM_ALERT]";
+ position: absolute;
+ top: -12px;
+ left: 15px;
+ background: var(--accent-color);
+ color: #000;
+ font-size: 0.75rem;
+ font-weight: bold;
+ padding: 2px 6px;
+ border: 2px solid #000;
+ }
+
+ .m-card-b2rf.no-tag::before {
+ display: none;
+ }
+
+ /* Header Style */
+ .t-item-qfts {
+ font-size: 2.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ line-height: 1.1;
+ letter-spacing: -2px;
+ color: var(--accent-color);
+ margin-bottom: 20px;
+ border-bottom: var(--border-width) dashed var(--accent-color);
+ padding-bottom: 10px;
+ }
+
+ .r-list-gb5m {
+ list-style: none;
+ padding: 0;
+ }
+
+ .r-list-gb5m li {
+ position: relative;
+ padding-left: 25px;
+ margin-bottom: 12px;
+ font-size: 1rem;
+ }
+
+ .r-list-gb5m li::before {
+ content: "▶";
+ position: absolute;
+ left: 0;
+ color: var(--accent-color);
+ }
+
+ /* Navigation */
+ .t-nav-9qu0 {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: #000000;
+ border-bottom: var(--border-width) solid var(--border-color);
+ padding: 20px 5%;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+
+ .t-nav-9qu0-brand {
+ font-size: 1.4rem;
+ font-weight: 900;
+ color: var(--accent-color);
+ text-decoration: none;
+ letter-spacing: -1px;
+ border: 2px solid var(--accent-color);
+ padding: 5px 10px;
+ }
+
+ .t-nav-9qu0-list {
+ display: flex;
+ list-style: none;
+ gap: 15px;
+ }
+
+ .t-nav-9qu0-item a {
+ color: var(--text-color);
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 0.95rem;
+ padding: 8px 12px;
+ border: 2px solid transparent;
+ transition: all 0.15s ease;
+ }
+
+ .t-nav-9qu0-item a:hover,
+ .t-nav-9qu0-item.active a {
+ background: var(--accent-color);
+ color: #000000;
+ border-color: #000000;
+ }
+
+ /* Container */
+ .container {
+ max-width: 1200px;
+ margin: 40px auto;
+ padding: 0 20px;
+ }
+
+ /* Grid */
+ .grid-layout {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: var(--grid-gap);
+ }
+
+ @media (max-width: 992px) {
+ .grid-layout {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ @media (max-width: 768px) {
+ .t-nav-9qu0 {
+ flex-direction: column;
+ gap: 15px;
+ text-align: center;
+ }
+ .t-nav-9qu0-list {
+ width: 100%;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+ .t-item-qfts {
+ font-size: 1.8rem;
+ }
+ }
+
+ /* Utility classes */
+ .highlight-text {
+ color: var(--accent-color);
+ font-weight: bold;
+ }
+
+ .terminal-box {
+ background: #111;
+ border-left: 5px solid var(--accent-color);
+ padding: 15px;
+ font-family: monospace;
+ margin-bottom: 20px;
+ font-size: 0.9rem;
+ color: #00ff00;
+ }
+
+ .footer {
+ border-top: var(--border-width) solid var(--border-color);
+ padding: 40px 20px;
+ text-align: center;
+ background: #000;
+ margin-top: 60px;
+ font-size: 0.85rem;
+ color: var(--text-muted);
+ }
+ </style>
+  <meta property="og:title" content="글 목록 · t2-archive-karaoke-gyodae-hub">
+  <meta property="og:description" content="t2-archive-karaoke-gyodae-hub에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://archive.karaoke-gyodae-hub.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="m-card-b2rf no-tag" style="background-color: #1a1a1a;">
+ <h1 class="t-item-qfts">OBJECTIVE ANALYSIS FOR BUSINESS ENTERTAINMENT</h1>
+ <p style="font-size: 1.1rem; max-width: 800px;">
+ 본 아카이브는 서울 지역 내 비즈니스 영접 및 기업 회식 모임을 기획하는 실무자들을 위해 설립되었습니다. 왜곡된 광고와 파편화된 정보 사이에서 <span class="highlight-text">객관적이고 신뢰할 수 있는 분석 프레임워크</span>를 제공하는 것을 최우선 가치로 삼습니다.
+ </p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 14개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-skpgg7.html">야, 니들이 파이트클럽 1프레임 타일러 더든 진짜 비밀을 알아? 소품실에서 피눈물 흘린 썰 푼다 😭</a>
+        <p class="post-item__summary">정확히 4분 6초, 주인공의 불면증 고백 뒤로 아주 잠깐 스쳐 지나간 붉은색 티셔츠의 사나이를 정지 화면으로 포착하는 데 성공한 순간 내 손끝은 떨리고 있었다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-003-1pywkq5.html">접대 장소 추천 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">서울에서 중요한 비즈니스 미팅이나 상호 협업을 위한 만남을 준비할 때 적절한 장소를 선택하는 일은 성공적인 대화의 첫걸음입니다. 대화의 집중도를 높이려면 주변 소음이 잘 차단되는 독립된 구역이나 별</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-002-1w1lese.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울에서 중요한 비즈니스 미팅이나 외빈 접대를 준비할 때는 가장 먼저 행사의 성격과 참석자의 성향을 정확하게 파악하는 것이 필요합니다. 참석자의 연령대, 식성, 알레르기 유무, 선호하는 음식 종류는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-1kvoefc.html">파이트 클럽 1프레임짜리 타일러 더든, 이걸 다 찾았네요</a>
+        <p class="post-item__summary">파이트 클럽 런타임 139분 중에 타일러 더든이 등장하기 전, 정확히 1/24초 동안 스쳐 지나가는 프레임이 6회 삽입되어 있다. 단순한 편집 실수가 아니라 데이빗 핀처가 의도적으로 심어놓은 서브리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-005-qwactc.html">300만 원짜리 가품 눈탱이 맞고 배운 SB 덩크 파리 감별법, 진짜 접대 장소 추천만큼 뼈아픈 실전 노하우</a>
+        <p class="post-item__summary">컬러링이나 캔버스 패턴의 화려함만 보고 진짜와 가짜를 구별할 수 있다고 믿는 사람들은 백전백패합니다. 진짜 무서운 건 스니커즈의 뼈대와 질감, 즉 보이지 않는 마이크로 디테일에 숨어 있거든요. 저 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-001-i9evrr.html">스티치 밀도와 박스지 재질, 그 간극의 차이: 나이키 SB Dunk Low Paris 2003년판 vs 2021년 레트로판 비교</a>
+        <p class="post-item__summary">나이키 SB Dunk Low Paris, 이 모델은 한정판 스니커즈 열성도의 마음을 사로잡는 아이콘이다. 하지만 이 중에 2003년판과 2021년 레트로판은 어떤 차이가 있을까? 오늘은 이 두 버전</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-002-12cjxkw.html">비즈니스 미팅보다 더 독하게 파고드는 미사용 보스 데이터의 진실</a>
+        <p class="post-item__summary">새벽 3시 14분, 1.02.1 버전의 맵 데이터 덤프를 띄워놓고 144프레임 모니터 앞에서 멍하니 굳어있던 그 순간이 기억납니다. '무명의 영체'와 '대장장이의 그림자', 그리고 그 악명 높던 '</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-004-d4a6pv.html">서울 접대 공간의 선택적 집중: 소규모 독립 다이닝 룸의 가치</a>
+        <p class="post-item__summary">접대라는 행위의 본질은 정보의 비대칭성을 활용하여 관계의 우위를 점하는 데 있다. 단순히 비싼 음식을 내놓는 식당을 찾는 것은 하책이다. 서울 시내 수많은 요식업체 중, 접대라는 목적에 부합하는 장</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-001-1da7w57.html">접대 장소 추천에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">서울에서 중요한 비즈니스 미팅이나 거래처와의 만남을 준비할 때 적합한 장소를 선택하는 것은 성공적인 소통을 위한 핵심 요소입니다. 하지만 많은 이들이 접대 장소 추천 정보를 찾아볼 때 화려한 인테리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-sw7vcq.html">접대 장소 고를 때 원장 경력만 보다가 망한 썰 푼다</a>
+        <p class="post-item__summary">1999년 가을, 폭스 사의 편집실에서 잠깐 일했던 선배 하나가 내게 준 VHS 테이프 얘기부터 해야겠다. 그때 그 선배가 &quot;니가 그렇게 파이트 클럽 빠돌이면 이거 봐라&quot; 하면서 던져준 게 화질 개</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-004-yph3l8.html">사장 몰래 안주 원가 계산하던 내가 홍대 폐업 대란 속에서 건져낸 진짜 접대 장소 추천의 비밀</a>
+        <p class="post-item__summary">2023년 10월 14일, 내가 단골로 드나들던 홍대 서교동 3층 이자카야 냉장고에서 슬쩍 훔쳐본 프라임 등급 살치살 납품 단가는 100g당 정확히 3,450원이었다. 사장 형 몰래 레시피 저울로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-m1al45.html">미야자키가 지운 진짜 다크소울, 그 삭제된 프롤로그를 복원해보았다</a>
+        <p class="post-item__summary">파일 하나를 잘못 건드렸다가 빌드 통짜로 깨진 적 있지? 나만 그런 거 아니지. 디버그 모드로 무적 상태 만들어서 맵 돌아다니다가 특정 폴리곤에 낑겨서 3시간 날린 그 기분. 데이터 마이닝이라는 게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-6glbaz.html">룸 좀 다녀본 놈이 말하는, 3천 매출 뒤에 숨겨진 텅 빈 통장 이야기</a>
+        <p class="post-item__summary">매출 3천만 원을 찍으면 사장님 소리 들으며 떵떵거릴 줄 알았지. 2018년식 '아리아' 오디오 앰프가 찢어지는 소리를 내며 룸 안을 울릴 때, 내 통장은 이미 마이너스 4자리 수를 향해 달리고 있</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-005-11kwfm4.html">접대 장소 추천 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">비즈니스 미팅이나 중요한 손님을 모시는 자리를 준비할 때 가장 먼저 고민하게 되는 것이 바로 적절한 장소 선정입니다. 참석자의 성향, 대화의 성격, 모임 목적에 따라 최적의 공간이 달라지기 때문에 </p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
